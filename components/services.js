@@ -48,7 +48,7 @@ const ServiceComponent = () => {
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 bg-opacity-50 p-4 md:p-8">
         {/* Content Section */}
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl mt-6 md:text-4xl font-bold text-white mb-4">
             What We Can Do For You
           </h2>
           <p className="text-gray-300 mb-6">
@@ -82,8 +82,8 @@ const ServiceComponent = () => {
                 {card.name}
               </h3>
               <p className="text-gray-700 mb-4">{card.description}</p>
-             
-             {/*
+
+              {/*
               <button
                 className="bg-[#3b445f] text-white py-2 px-4 rounded-lg hover:bg-[#3b445f] transition duration-300"
                 onClick={() => openModal(card.name, card.description)}
@@ -91,8 +91,6 @@ const ServiceComponent = () => {
                 Read More
               </button>
               */}
-
-
             </div>
           ))}
         </div>

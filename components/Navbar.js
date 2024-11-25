@@ -9,14 +9,14 @@ const navigation = [
   { name: 'Sectors We Serve', href: '/sectors-we-serve', subItems: [] },
   { name: 'Tax Services', href: '/tax-services', subItems: [] },
   { name: 'Accounting Services', href: '/accounting-services', subItems: [] },
-  { name: 'Contact us', href: '/contact', subItems: [] }
+  { name: 'Contact us', href: '/contact', subItems: [] },
 ];
 
 export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="fixed top-0 w-full bg-[#3b445f] shadow-sm z-50 h-18"
+      className="fixed top-0 px-3 w-full bg-[#3b445f] shadow-sm z-50 h-18"
     >
       {({ open }) => (
         <>
@@ -49,8 +49,8 @@ export default function Navbar() {
                 </Link>
               </div>
 
-              <div className="flex-grow mr-12 flex justify-center">
-                <div className="hidden lg:flex space-x-12 lg:mr-24">
+              <div className="w-full flex-grow  flex justify-center">
+                <div className="hidden lg:flex space-x-12 ">
                   {navigation.map(({ name, href, subItems }) => (
                     <div className="relative group" key={name}>
                       <Link href={href}>

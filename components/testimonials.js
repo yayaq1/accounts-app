@@ -1,26 +1,29 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faChevronLeft,
+  faChevronRight,
+} from '@fortawesome/free-solid-svg-icons';
 
 const testimonials = [
   {
-    quote: "This product is amazing! It changed my life.",
-    name: "John Doe",
-    title: "CEO, Example Corp",
-    image: "/image.jpg"
+    quote: 'This product is amazing! It changed my life.',
+    name: 'John Doe',
+    title: 'CEO, Example Corp',
+    image: '/image.jpg',
   },
   {
-    quote: "Fantastic service and support. Highly recommend!",
-    name: "Jane Smith",
-    title: "CTO, Another Corp",
-    image: "/image1.jpg"
+    quote: 'Fantastic service and support. Highly recommend!',
+    name: 'Jane Smith',
+    title: 'CTO, Another Corp',
+    image: '/image1.jpg',
   },
   {
-    quote: "High quality and great customer service.",
-    name: "Sam Wilson",
-    title: "Manager, Some Company",
-    image: "/image2.jpg"
-  }
+    quote: 'High quality and great customer service.',
+    name: 'Sam Wilson',
+    title: 'Manager, Some Company',
+    image: '/image2.jpg',
+  },
 ];
 
 const Testimonial = () => {
@@ -47,7 +50,7 @@ const Testimonial = () => {
         <div className="relative flex items-center justify-center">
           <button
             onClick={handlePrev}
-            className="absolute left-0 sm:bottom-auto bottom-0 ml-4 bg-transparent text-gray-600 py-2 px-4 hover:text-gray-900 transition duration-300"
+            className=" absolute top-[20%] sm:top-1/2 sm:-translate-y-1/2 left-0 ml-4  bg-transparent text-gray-600 py-2 px-4 hover:text-gray-900 transition duration-300"
           >
             <FontAwesomeIcon icon={faChevronLeft} size="2x" />
           </button>
@@ -73,7 +76,7 @@ const Testimonial = () => {
           </div>
           <button
             onClick={handleNext}
-            className="absolute right-0 mr-4 sm:bottom-auto bottom-0 bg-transparent text-gray-600 py-2 px-4 hover:text-gray-900 transition duration-300"
+            className="absolute right-0 mr-4 top-[20%] sm:top-1/2 sm:-translate-y-1/2 bg-transparent text-gray-600 py-2 px-4 hover:text-gray-900 transition duration-300"
           >
             <FontAwesomeIcon icon={faChevronRight} size="2x" />
           </button>

@@ -26,7 +26,9 @@ const Contact = () => {
             </p>
           </div>
         </div> */}
-        <Talk />
+        <div className="mt-8">
+          <Talk />
+        </div>
         {/*
         <div className="bg-white py-4">
           <div className="flex justify-between gap-6 items-center max-w-wrapper mx-auto">
