@@ -6,9 +6,22 @@ import Services from '../components/services';
 import Logo from '../components/logo';
 import Talk from '../components/talk';
 import GetIn from '../components/getIn';
+import SEOHead from '../components/SEOHead';
+
 const Tax = () => {
     return (
         <div>
+      <SEOHead
+        title="Tax Services UK | Expert Tax Planning & Compliance | Wise Numbers"
+        description="Professional tax services in the UK. Expert tax planning, compliance, and tax optimization for individuals and businesses."
+        keywords="tax services UK, tax planning UK, tax compliance UK, tax advisor Birmingham, chartered tax advisor, tax optimization UK"
+        path="/tax-services"
+        schemaTypes={['TaxService', 'ProfessionalService', 'Organization']}
+        breadcrumbs={[
+          { name: 'Home', url: '/' },
+          { name: 'Tax Services', url: '/tax-services' }
+        ]}
+      />
       <Navbar />
       
         <div className="relative bg-cover bg-center h-screen mt-20" style={{ backgroundImage: 'url("/back.jpg")' }}>

@@ -5,9 +5,12 @@ import Link from 'next/link';
 
 export default function HeroSection() {
   return (
-    <div className="flex items-center justify-center min-h-screen mt-16 bg-[#E5E7EB] px-4 sm:py-16 md:py-8">
+    <section 
+      className="flex items-center justify-center min-h-screen mt-16 bg-[#E5E7EB] px-4 sm:py-16 md:py-8"
+      aria-label="Hero section - Wise Numbers LTD accounting services"
+    >
       <div className="flex flex-col md:flex-row md:items-center max-w-7xl w-full">
-        <motion.div
+        <motion.article
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -19,7 +22,7 @@ export default function HeroSection() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="font-montserrat text-2xl sm:text-3xl lg:text-5xl font-bold mb-4 text-[#242A33]"
           >
-            Wise Numbers LTD
+            Wise Numbers LTD - Premier Accounting Services in the UK
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -50,20 +53,20 @@ export default function HeroSection() {
           >
             <Link href="/about-us">Learn More</Link>
           </motion.button>
-        </motion.div>
-        <motion.div
+        </motion.article>
+        <motion.figure
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className=" md:w-1/2 flex justify-center"
+          className="md:w-1/2 flex justify-center"
         >
           <img
             src="/heroSection.png"
-            alt="Financial data visualization"
+            alt="Wise Numbers LTD - Professional accounting and financial services visualization showing financial data, charts, and UK accounting expertise"
             className="rounded-lg w-full max-w-[280px] sm:max-w-[360px] md:max-w-[400px] lg:max-w-[451px]"
           />
-        </motion.div>
+        </motion.figure>
       </div>
-    </div>
+    </section>
   );
 }

@@ -6,9 +6,22 @@ import Services from '../components/services';
 import Logo from '../components/logo';
 import Talk from '../components/talk';
 import GetIn from '../components/getIn';
+import SEOHead from '../components/SEOHead';
+
 const Train = () => {
     return (
         <div>
+      <SEOHead
+        title="Accounting Services UK | Professional Bookkeeping & Financial Services"
+        description="Comprehensive accounting services in the UK. Expert bookkeeping, financial management, and accounting solutions for businesses across Birmingham and the UK."
+        keywords="accounting services UK, bookkeeping services UK, financial management UK, accounting firm Birmingham, professional accounting services, chartered accountant services"
+        path="/accounting-services"
+        schemaTypes={['AccountingService', 'ProfessionalService', 'Organization']}
+        breadcrumbs={[
+          { name: 'Home', url: '/' },
+          { name: 'Accounting Services', url: '/accounting-services' }
+        ]}
+      />
       <Navbar />
       
         <div className="relative bg-cover bg-center h-screen mt-20" style={{ backgroundImage: 'url("/back.jpg")' }}>

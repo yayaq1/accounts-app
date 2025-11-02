@@ -36,7 +36,7 @@ const Contact = () => {
             >
               <img
                 src={card.imageUrl}
-                alt={`Image ${card.id}`}
+                alt={`Contact Wise Numbers LTD - ${card.description}`}
                 className="w-full h-60 object-cover object-center"
               />
               <div className="p-4">

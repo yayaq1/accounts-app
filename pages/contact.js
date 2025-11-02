@@ -6,9 +6,22 @@ import Services from '../components/services';
 import Logo from '../components/logo';
 import Talk from '../components/talk';
 import GetIn from '../components/getIn';
+import SEOHead from '../components/SEOHead';
+
 const Contact = () => {
   return (
     <div>
+      <SEOHead
+        title="Contact Wise Numbers | Accounting Firm Birmingham | Get in Touch"
+        description="Contact Wise Numbers LTD in Birmingham, UK. Phone: +44 7889 255949. Expert accounting and tax services."
+        keywords="contact wise numbers, accounting firm Birmingham contact, accountant contact UK, wise numbers phone number"
+        path="/contact"
+        schemaTypes={['LocalBusiness', 'Organization']}
+        breadcrumbs={[
+          { name: 'Home', url: '/' },
+          { name: 'Contact Us', url: '/contact' }
+        ]}
+      />
       <Navbar />
 
       <div

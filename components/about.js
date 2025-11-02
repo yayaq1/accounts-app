@@ -58,7 +58,7 @@ export default function AboutSection() {
           >
             <Image
               src="/about.png"
-              alt="Premier Chartered Accounting Firm"
+              alt="Wise Numbers LTD - Expert chartered accounting firm in Birmingham, UK providing professional accounting and tax services"
               width={500}
               height={500}
               className="rounded-lg shadow-lg"

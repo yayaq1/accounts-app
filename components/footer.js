@@ -34,10 +34,10 @@
             {/* Logos */}
             <div className="flex flex-col items-center justify-center space-y-6">
               <div className="relative w-[180px] h-[90px]">
-                <Image src="/acca.png" alt="ACCA Logo" layout="fill" objectFit="contain" className="rounded-lg shadow-lg" />
+                <Image src="/acca.png" alt="ACCA - Association of Chartered Certified Accountants accreditation logo for Wise Numbers LTD" layout="fill" objectFit="contain" className="rounded-lg shadow-lg" />
               </div>
               <div className="relative w-[180px] h-[90px]">
-                <Image src="/pcd-logo.jpg" alt="PCD Logo" layout="fill" objectFit="contain" className="rounded-lg shadow-lg" />
+                <Image src="/pcd-logo.jpg" alt="PCD - Professional certification logo for Wise Numbers LTD accounting services" layout="fill" objectFit="contain" className="rounded-lg shadow-lg" />
               </div>
             </div>
 

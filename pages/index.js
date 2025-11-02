@@ -10,10 +10,21 @@ import Testimonials from '../components/testimonials';
 import Talk from '../components/talk';
 import Services from '../components/services';
 import AnimatedHero from '../components/hero';
+import SEOHead from '../components/SEOHead';
 
 export default function Home() {
   return (
     <div>
+      <SEOHead
+        title="Wise Numbers LTD | Premier Accounting Services in the UK"
+        description="Expert-led accounting firm in Birmingham, UK. Chartered accountants providing accounting, tax, and bookkeeping services. Trusted by businesses across the UK."
+        keywords="wise numbers, accountant services UK, accounting firm Birmingham, chartered accountant UK, tax services UK, bookkeeping services UK, accounting services in the UK"
+        path="/"
+        schemaTypes={['Organization', 'LocalBusiness', 'WebSite']}
+        breadcrumbs={[
+          { name: 'Home', url: '/' }
+        ]}
+      />
       <Navbar />
       <AnimatedHero />
       <div className="">

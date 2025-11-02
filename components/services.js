@@ -74,7 +74,7 @@ const ServiceComponent = () => {
               <div className="flex justify-center mb-4">
                 <img
                   src={card.logo}
-                  alt={card.name}
+                  alt={`${card.name} by Wise Numbers LTD - Professional UK accounting services`}
                   className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover"
                 />
               </div>
