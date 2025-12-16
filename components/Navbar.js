@@ -6,6 +6,7 @@ import { MenuIcon, XIcon, ChevronRightIcon } from '@heroicons/react/solid';
 const navigation = [
   { name: 'Home', href: '/', subItems: [] },
   { name: 'About us', href: '/about-us', subItems: [] },
+  { name: 'Blog', href: '/blog', subItems: [] },
   { name: 'Sectors We Serve', href: '/sectors-we-serve', subItems: [] },
   { name: 'Tax Services', href: '/tax-services', subItems: [] },
   { name: 'Accounting Services', href: '/accounting-services', subItems: [] },
